@@ -21,3 +21,17 @@ body
     border: 1px solid aqua;
     margin: 0 auto;
 }
+
+#cabecera
+{
+    color: cornflowerblue;
+    font-size: 25px;
+
+}
+
+#cabecera > h1 
+{
+    color: darkcyan;
+    font-style:oblique;
+    font-weight: bolder;
+}
