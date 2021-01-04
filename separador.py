@@ -1,17 +1,14 @@
 
 def run():
-    numero = input('Ingresa un numero entero: ')
-    contador = 0
-    resultante = ''
-    for i in reversed(numero):
+    numero = input('Ingresa un numero: ')
 
-        if contador == 3:
-           resultante = '.' + resultante 
-           contador = 0
-       
-        contador += 1 
-        resultante = i + resultante
+    resultante = ''
+
+    for i, l in enumerate(reversed(numero)):
+        if i % 3 == 0 and i != 0:
+            resultante = '.' + resultante
         
+        resultante = l + resultante        
     
     return resultante
 
